@@ -3,7 +3,16 @@
 A modern AI-powered job application tracking platform that helps job seekers organize applications, analyze resume-job matches, improve resumes, and generate tailored cover letters.
 
 
+Landing Page->
+
+<img width="1740" height="877" alt="image" src="https://github.com/user-attachments/assets/ae89cf28-d709-44a4-a77e-98c2eaf32d5c" />
+
+
+Login Page->
 <img width="1125" height="850" alt="image" src="https://github.com/user-attachments/assets/c516914b-ea78-4daa-b060-6e5accf97c05" />      
+
+
+Sign-in Page->
 <img width="1051" height="882" alt="image" src="https://github.com/user-attachments/assets/290dc567-6923-49bb-870f-68037683b036" />
 
 
