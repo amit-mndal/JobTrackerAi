@@ -7,6 +7,9 @@ import AddJob from './pages/AddJob';
 import JobDetail from './pages/JobDetail';
 import Navbar from './components/Navbar';
 
+import Landing from './pages/Landing';
+import { useLocation } from 'react-router-dom';
+
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
   return user ? children : <Navigate to="/login" replace />;
@@ -14,11 +17,14 @@ const ProtectedRoute = ({ children }) => {
 
 export default function App() {
   const { user } = useAuth();
+  const location = useLocation();
 
   return (
     <div className="min-h-screen">
       {user && <Navbar />}
+      {/* {user && location.pathname !== '/' && <Navbar />} */}
       <Routes>
+        <Route path="/" element={!user ? <Landing /> : <Dashboard />} />
         <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
         <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />
         <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />

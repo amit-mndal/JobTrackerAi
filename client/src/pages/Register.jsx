@@ -147,17 +147,25 @@ export default function Register() {
             margin: '0 auto 20px',
             boxShadow: '0 0 32px rgba(79,124,255,0.25)',
           }}>J</div> */}
-          <img
-  src={logo}
-  alt="JobTrack AI"
+ <Link
+  to="/"
   style={{
-    width: 64,
-    height: 64,
-    objectFit: 'contain',
-    margin: '0 auto 16px',
-    display: 'block',
+    display: 'inline-block',
+    marginBottom: 16,
   }}
-/>
+>
+  <img
+    src={logo}
+    alt="JobTrack AI"
+    style={{
+      width: 64,
+      height: 64,
+      objectFit: 'contain',
+      display: 'block',
+      cursor: 'pointer',
+    }}
+  />
+</Link>
 
 
           <h1 style={{
@@ -196,7 +204,7 @@ export default function Register() {
             )}
 
             <button type="submit" className="btn-primary" disabled={loading}
-              style={{ background: '#5B21B6', width: '100%', padding: 11, marginTop: 4 }}>
+              style={{ background: '#355C5A', width: '100%', padding: 11, marginTop: 4 }}>
               {loading ? 'Creating...' : 'Create Account →'}
             </button>
           </form>

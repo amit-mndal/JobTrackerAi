@@ -66,7 +66,12 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleLogout = () => { logout(); navigate('/login'); };
+  //const handleLogout = () => { logout(); navigate('/login'); };
+  
+  const handleLogout = () => {
+  logout();
+  navigate('/', { replace: true });
+  };
 
   return (
     
@@ -106,7 +111,7 @@ export default function Navbar() {
             fontFamily: 'DM Serif Display, serif',
             fontSize: 18, color: '#e8eaf0', letterSpacing: '-0.02em',
           }}>
-            JobTrack <span style={{ color: '#4f7cff', fontStyle: 'italic' }}>AI</span>
+            JobTrack <span style={{ color: '#8B7AA8', fontStyle: 'italic' }}>AI</span>
           </span>
         </Link>
 

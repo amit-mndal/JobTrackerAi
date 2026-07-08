@@ -169,18 +169,26 @@ export default function Login() {
             margin: '0 auto 20px',
             boxShadow: '0 0 32px rgba(79,124,255,0.25)',
           }}>J</div> */}
-          <img
-            src={logo}
-            alt="JobTrack AI"
-            style={{
-              width: 52,
-              height: 52,
-              borderRadius: 12,
-              objectFit: 'cover',
-              margin: '0 auto 20px',
-              display: 'block',
-            }}
-          />
+       <Link
+  to="/"
+  style={{
+    display: 'inline-block',
+    marginBottom: 20,
+  }}
+>
+  <img
+    src={logo}
+    alt="JobTrack AI"
+    style={{
+      width: 52,
+      height: 52,
+      borderRadius: 12,
+      objectFit: 'cover',
+      display: 'block',
+      cursor: 'pointer',
+    }}
+  />
+</Link>
           <h1 style={{
             fontFamily: 'DM Serif Display, serif',
             fontSize: 28, color: '#e8eaf0',
@@ -229,7 +237,7 @@ export default function Login() {
             )}
 
             <button type="submit" className="btn-primary" disabled={loading}
-              style={{ background:'#5B21B6',width: '100%', padding: '11px', marginTop: 4 }}>
+              style={{ background:'#355C5A',width: '100%', padding: '11px', marginTop: 4 }}>
               {loading ? 'Signing in...' : 'Sign In →'}
             </button>
           </form>
