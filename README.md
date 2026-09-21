@@ -158,9 +158,4 @@ Amit Mandal
 
 
 
----
 
-## License
-
-This project is intended for educational, portfolio, and learning purposes.
-Feel free to star or to contribute
